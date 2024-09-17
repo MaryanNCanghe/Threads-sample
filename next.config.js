@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  swcMinify: false,
   experimental: {
     serverActions: true,
-    swcMinify: false,
+    
     serverComponentsExternalPackages: ["mongoose"],
   },
   eslint: {
